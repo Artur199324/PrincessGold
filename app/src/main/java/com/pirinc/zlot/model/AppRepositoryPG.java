@@ -51,7 +51,7 @@ public class AppRepositoryPG {
     }
 
     public ConnPG conPG() {
-        Log.d("weq", "3");
+
         ConnPG connPG = new ConnPG();
         new Thread(new Runnable() {
             @Override
@@ -63,9 +63,9 @@ public class AppRepositoryPG {
                     connPG.setBgayw(bufferedReader.readLine());
                     connPG.setNhsa(bufferedReader.readLine());
                     connPG.setAsdw(bufferedReader.readLine());
-                    Log.d("weq", "4");
+                  ;
                 } catch (Exception e) {
-                    Log.d("weq", e + "4");
+
                 }
 
             }
@@ -95,7 +95,6 @@ public class AppRepositoryPG {
 
                     String[] as = appLinkData.getTargetUri().toString().split("://");
                     String deep = as[1];
-                    Log.d("weq", deep);
                     String strDeepLink = parserPG(deep);
                     dipp.setVdse(deep);
                     dipp.setQqwqa(strDeepLink);

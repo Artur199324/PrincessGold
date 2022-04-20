@@ -146,7 +146,7 @@ public class PG extends AppCompatActivity {
                             }
                         });
                     } else {
-                        Log.d("weq", gsiw);
+
                         webViewFullAppPG.setVisibility(View.VISIBLE);
                         webViewFullAppPG.loadUrl(gsiw);
                     }
@@ -253,6 +253,10 @@ public class PG extends AppCompatActivity {
         String vdaw;
         String vdse;
         String vfsay;
+        String sab7;
+        String sab8;
+        String sab9;
+        String sab10;
 
         String[] bgsaf = sada.split("_");
 
@@ -292,6 +296,26 @@ public class PG extends AppCompatActivity {
             vfsay = "";
 
         }
+        try {
+            sab7 = bgsaf[6];
+        } catch (Exception e) {
+            sab7 = "";
+        }
+        try {
+            sab8 = bgsaf[7];
+        } catch (Exception e) {
+            sab8 = "";
+        }
+        try {
+            sab9 = bgsaf[8];
+        } catch (Exception e) {
+            sab9 = "";
+        }
+        try {
+            sab10 = bgsaf[9];
+        } catch (Exception e) {
+            sab10 = "";
+        }
 
         String dfds = decoderPG("P21lZGlhX3NvdXJjZT0=") + bcshw +
                 decoderPG("JnN1YjE9") + vfdsa +
@@ -300,6 +324,10 @@ public class PG extends AppCompatActivity {
                 decoderPG("JnN1YjQ9") + vdaw +
                 decoderPG("JnN1YjU9") + vdse +
                 decoderPG("JnN1YjY9") + vfsay +
+                decoderPG("JnN1Yjc9") + sab7 +
+                decoderPG("JnN1Yjg9") + sab8 +
+                decoderPG("JnN1Yjk9") + sab9 +
+                decoderPG("JnN1YjEwPQ==") + sab10 +
                 decoderPG("JmNhbXBhaWduPQ==") + bsgaw +
                 decoderPG("Jmdvb2dsZV9hZGlkPQ==") + sads +
                 decoderPG("JmFmX3VzZXJpZD0=") + hfsgds +
@@ -333,7 +361,6 @@ public class PG extends AppCompatActivity {
 
                     if (bcgsa.equals(decoderPG("Tm9uLW9yZ2FuaWM="))) {
                         String ewew = connPG.getBgayw() + vbhs;
-                        Log.d("weq", "App" + ewew);
                         webViewFullAppPG.setVisibility(View.VISIBLE);
                         webViewFullAppPG.loadUrl(ewew);
                         SavePG savePG = new SavePG(ewew);
@@ -347,7 +374,6 @@ public class PG extends AppCompatActivity {
                         SavePG savePG = new SavePG(gtre);
                         pgActivityViewModel.insertDataSave(savePG);
                         count = 5;
-                        Log.d("weq", "Deep" + gtre);
 
                     } else {
                         if (connPG.getDae().equals("0")) {
@@ -355,7 +381,7 @@ public class PG extends AppCompatActivity {
                             bbbCccc.setVisibility(View.VISIBLE);
                             progressBar.setVisibility(View.INVISIBLE);
                             count = 5;
-                            Log.d("weq", "game");
+
                         } else {
 
                             String sfre = connPG.getBgayw() + decoderPG("P21lZGlhX3NvdXJjZT1vcmdhbmlj") +
@@ -370,7 +396,7 @@ public class PG extends AppCompatActivity {
                             SavePG savePG = new SavePG(sfre);
                             pgActivityViewModel.insertDataSave(savePG);
 
-                            Log.d("weq", "Org" + sfre);
+
                             count = 5;
                         }
                     }
