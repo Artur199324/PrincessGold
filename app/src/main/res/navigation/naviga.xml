@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/naviga"
+    app:startDestination="@id/gameFragmentPG">
+    <fragment
+        android:id="@+id/gameFragmentPG"
+        android:name="com.pirinc.zlot.GameFragmentPG"
+        android:label="fragment_game_p_g"
+        tools:layout="@layout/fragment_game_p_g" >
+        <action
+            android:id="@+id/action_gameFragmentPG_to_regaFragment"
+            app:destination="@id/regaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regaFragment"
+        android:name="com.pirinc.zlot.RegaFragment"
+        android:label="fragment_rega"
+        tools:layout="@layout/fragment_rega" >
+        <action
+            android:id="@+id/action_regaFragment_to_gameFragmentPG"
+            app:destination="@id/gameFragmentPG" />
+    </fragment>
+</navigation>

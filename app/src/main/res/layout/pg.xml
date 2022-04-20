@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="154dp"
+        android:layout_height="120dp"
+        android:indeterminateTint="#670200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.widget.Button
+        android:id="@+id/bbbSss"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:background="#670200"
+        android:text="start game"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/bbbCccc"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:background="#670200"
+        android:text="close games"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/bbbSss"
+        app:layout_constraintStart_toStartOf="@+id/bbbSss"
+        app:layout_constraintTop_toBottomOf="@+id/bbbSss" />
+
+    <android.widget.Button
+        android:id="@+id/bbbInternet"
+        android:layout_width="188dp"
+        android:layout_height="60dp"
+        android:background="#670200"
+        android:text="Connect to the Internet"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/webViewFullAppPG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
